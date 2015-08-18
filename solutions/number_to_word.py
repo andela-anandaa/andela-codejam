@@ -26,7 +26,7 @@ def num_to_word2(num):
   for i in num:
 
     print words[int(i)] + " ",
-
+#loop removed 
 def num_to_word3(num):
     num = str(num)
 
@@ -47,8 +47,21 @@ def num_to_word3(num):
 
     return " ".join(word)
 
-print num_to_word3(8983434)
+#print num_to_word3(8983434)
 
 
-#print num_to_word(488833)
+#print num_to_word2(488833)
 #print num_to_word(438483478)
+
+#the None type output removed refactored...
+def num_to_word(num):
+  num = str(num)
+  words = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 
+		   'Six','Seven', 'Eight', 'Nine']
+  result = []
+  for i in num:
+    result.append(words[int(i)] + " ",)
+  
+  return(", ".join(result))
+  
+  
