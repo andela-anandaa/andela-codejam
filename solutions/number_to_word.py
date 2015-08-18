@@ -27,6 +27,28 @@ def num_to_word2(num):
 
     print words[int(i)] + " ",
 
+def num_to_word3(num):
+    num = str(num)
+
+    key = {
+        0: 'zero',
+        1: 'one',
+        2: 'two',
+        3: 'three',
+        4: 'four',
+        5: 'five',
+        6: 'six',
+        7: 'seven',
+        8: 'eight',
+        9: 'nine'
+    }
+
+    word = [key[int(i)] for i in num]
+
+    return " ".join(word)
+
+print num_to_word3(8983434)
+
 
 #print num_to_word(488833)
 #print num_to_word(438483478)
